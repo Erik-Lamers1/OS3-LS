@@ -1,6 +1,17 @@
 # OS3-LS
 Large systems project code
 
-# Starting the benchmarks
+## Filebench
+Filebench is used in order to test the filesystem performance. 
 
-Use the command 'curl -sSL https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/install-script.sh  | bash'
+### Quick install
+
+Use the command 
+
+```
+curl -sSL https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/install-script.sh  | bash'
+```
+
+### Manual running
+
+To to ```/filebench/workloads```. Use the command ```filebench -f FILENAME.f``` to initiate a test.
