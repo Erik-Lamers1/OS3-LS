@@ -25,7 +25,7 @@ filebench -f $workloadsdir/$1.f &> $resultsdir/results_$1.txt
 echo "# Done #"
 sleep 30
 rm -rf /filebench/logfiles
-rm -rm /filebench/bigfileset
+rm -rf /filebench/bigfileset
 sleep 30
 
 }
