@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt update && upgrade
 
 apt install -y libtool m4 autotools-dev wget make git bison flex
