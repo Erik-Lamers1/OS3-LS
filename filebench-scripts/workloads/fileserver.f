@@ -1,4 +1,4 @@
-set $dir=/tmp
+set $dir=/filebench
 set $nfiles=10000
 set $meandirwidth=20
 set $filesize=cvar(type=cvar-gamma,parameters=mean:131072;gamma:1.5)
