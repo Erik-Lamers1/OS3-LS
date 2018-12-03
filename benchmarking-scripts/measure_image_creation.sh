@@ -18,7 +18,9 @@ command="xen-create-image --hostname=U1604-$2-$1 --dir=/vm-images/$2 --size=30G 
 
 print_progress $1 $2
 
+# Date will output in nanoseconds, convert it to milliseconds
 start=$(($(date +%s%N)/1000000))
+# Redirect stdout to /dev/null, we don't want to see all the image creation output
 ${command} &> /dev/null
 end=$(($(date +%s%N)/1000000))
 
@@ -26,12 +28,14 @@ execution_time=`expr ${end} - ${start}`
 
 echo "$1:$execution_time" >> output-$2.txt
 
+# Remove all created file so we don't fill up the disk
 rm /etc/xen/U1604-$2-$1.cfg
 rm -r /vm-images/$2/domains/U1604-$2-$1
 }
 
 for i in "${filesystems[@]}"; do
     preform_image_creation $1 $i
-    sleep 30
+    # Sleep for a minute so the filesystems have time to flush all cached data to disk
+    sleep 60
 done
 
