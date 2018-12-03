@@ -9,7 +9,7 @@ Filebench is used in order to test the filesystem performance.
 Use the command 
 
 ```
-curl -sSL https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/install-script.sh  | bash'
+curl -sSL https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/install-script.sh  | bash
 ```
 
 ### Manual running
