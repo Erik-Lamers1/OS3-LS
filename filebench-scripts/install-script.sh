@@ -33,10 +33,4 @@ wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scri
 
 chmod +x benchmark.sh
 
-## Asking you if you want to run the benchmark right away
-read -p "Would you like to run the benchmark? [Y/n]" -n 1 -r
-echo ""
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    ./benchmark.sh
-fi
+echo "Filebench is installed. Please run 'benchmark.sh' in order to run the benchmark."
