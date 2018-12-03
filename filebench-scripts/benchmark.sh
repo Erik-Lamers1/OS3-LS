@@ -3,10 +3,15 @@
 resultsdir=/filebench/results
 workloadsdir=/filebench/workloads
 
-cd /filebench/workloads
-
 echo "Workdir = $workloadsdir"
 echo "Resultsdir = $resultsdir"
+
+cd "$workloadsdir"
+
+## Retrieving the newest pre-defined workloads
+wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/fileserver.f
+wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/varmail.f
+wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/webserver.f
 
 if [ ! -d "$resultsdir" ]; then
      mkdir "$resultsdir"
