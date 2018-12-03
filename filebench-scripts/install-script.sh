@@ -16,6 +16,7 @@ cd filebench-1.5-alpha3
 
 mkdir /filebench/
 mkdir /filebench/workloads/
+cd /filebench/workloads/
 
 wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/fileserver.f
 wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/varmail.f
