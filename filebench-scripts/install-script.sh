@@ -35,7 +35,7 @@ chmod +x benchmark.sh
 
 ## Asking you if you want to run the benchmark right away
 read -p "Would you like to run the benchmark? [Y/n]" -n 1 -r
-echo 
+echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     ./benchmark.sh
