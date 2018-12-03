@@ -20,16 +20,25 @@ fi
 echo "### Beginning with the fileserver-test ###"
 filebench -f $workloadsdir/fileserver.f &> $resultsdir/results_fileserver.txt
 echo "# Done #"
-sleep 60
+sleep 30
+rm -rf /filebench/logfiles
+rm -rm /filebench/bigfileset
+sleep 30
 
 echo "### Beginning with the mailserver-test ###"
 filebench -f $workloadsdir/varmail.f &> $resultsdir/results_mailserver.txt
 echo "# Done #"
-sleep 60
+sleep 30
+rm -rf /filebench/logfiles
+rm -rm /filebench/bigfileset
+sleep 30
 
 echo "### Beginneing with the webserver-test ###"
 filebench -f $workloadsdir/webserver.f &> $resultsdir/results_webserver.txt
 echo "# Done #"
+sleep 10
+rm -rf /filebench/logfiles
+rm -rm /filebench/bigfileset
 
 echo
 echo
