@@ -21,3 +21,13 @@ wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scri
 wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/varmail.f
 wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/webserver.f
 
+cd /filebench/
+wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/benchmark.sh
+
+chmod +x benchmark.sh
+
+read -p "Would you like to run the benchmark? [Y/n]" -n 1 -r
+echo 
+if [[ $REPLY =~ ^[Yy]$ ]]
+     sh ./benchmark.sh
+fi
