@@ -8,7 +8,7 @@ echo "Workdir = $workloadsdir"
 echo "Resultsdir = $resultsdir"
 
 cd "$workloadsdir"
-rm -r "$workloadsdir/*"
+rm -r "./*"
 ## Retrieving the newest pre-defined workloads
 wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/fileserver.f
 wget https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/workloads/mailserver.f
