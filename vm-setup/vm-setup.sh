@@ -26,10 +26,5 @@ sleep 5
 
 screen -m -d -S filebench
 
-echo "Putting in the one-liner into the screen command.."
-sleep 3
-screen -S filebench -p 0 -X stuff "curl -sSL https://raw.githubusercontent.com/Erik-Lamers1/OS3-LS/master/filebench-scripts/install-script.sh  | bash"
-
-screen -r filebench
-
-echo "Done, you won't see this line probably"
+echo "Done, see the screen sessions below. Connecting can be done via 'screen -r filebench'."
+screen -ls
