@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt update
-apt install curl screen vim
+apt install -y curl screen vim
 
 mkdir .ssh
 
