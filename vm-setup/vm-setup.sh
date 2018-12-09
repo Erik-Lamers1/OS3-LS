@@ -4,7 +4,7 @@ apt update
 apt upgrade -y
 apt install -y curl screen vim
 
-mkdir .ssh
+mkdir ~/.ssh
 
 echo "Putting the ssh keys in the authorized_keys - file..."
 sleep 3
