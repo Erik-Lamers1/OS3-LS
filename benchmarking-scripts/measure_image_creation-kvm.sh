@@ -1,4 +1,6 @@
+#!/bin/bash
 declare -a filesystems=("ext4" "btrfs" "zfs")
+
 
 function print_progress() {
     echo "##########################################"
@@ -19,10 +21,10 @@ function preform_image_creation() {
 
    command="virt-install --name U1604-$2-$1 --ram 4096 \
  --disk path=/vm-images/$2/kvm/U1604-$2-$1.img,size=30,format=raw \
- --vcpus 4 --os-type linux --os-variant generic \
- --graphics vnc --network bridge=xenbr0 \
- --location 'http://nl.archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/' \
- --extra-args="ks=file:/root/preseed.cfg" --initrd-inject=/root/preseed.cfg"
+ --vcpus 4 --os-type linux --os-variant generic --wait 120\
+ --graphics vnc --noautoconsole --network bridge=xenbr0 \
+ --location http://nl.archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/ \
+ --extra-args ks=file:/root/preseed.cfg --initrd-inject /root/preseed.cfg"
 
    print_progress $1 $2
 
@@ -34,8 +36,8 @@ function preform_image_creation() {
 
    echo "$1:$execution_time" >> output-kvm-$2.txt
 
-   virsh destroy U1604-$2-$1
-   virsh undefine U1604-$2-$1 --remove-all-storage
+   virsh destroy U1604-$2-$1 &> /dev/null
+   virsh undefine U1604-$2-$1 --remove-all-storage &> /dev/null
 
 }
 
