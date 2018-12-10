@@ -19,6 +19,7 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDtzS2g7tO4oGJVn27qlPHeR3zr0ERHT0wyeL
 # SSH Key Ronald
 
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA3vwwIh6bShfEQbhDwhJavV0/D/VZBKMSrcc+hNbZjTar5y5GvQAr6KHBIPtL9aipAGcVgBYiFB81RAg9czuyS6TyW5XZ5iOCp9Dn6Bhwn1QSCao6155IcUF7rAKYnyUxr76nRF08M9mB6hbHe4gML0B+w5zPzGjcsVzzaG17nrqS7UgPJP9HjPw6/wjqCZf9hpvnrXzq1uX9iE1eqFJsdTNthPd4ODgVGaprYYrFy4/XjOIj9tboPpQH7o1ZCPT/p3+bcrRYvcqKRjfPc+woKmL0VLdCCNXlmtrgXGugrNAXADpoos9nfSxhHlAiMYBIiMoOZoLQZXSh5DNG5AocDw==" >> .ssh/authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOQkqTV4gf/5hIwFoZqiUFJFRNoLHPI/nle2zs951ZQpJznE1IXdK592gm/MfkX8z+M0g7y1fnSUaColJgbhjSzQArFBrX9/i1IhtI6tEjD635XtRXkduJosvCNVs3FT3i76rL85tvJLi9nFEysb07WzyVXHDTtjhdhgS6ihv8FOXFPYH+EzlPSC9sw2c2Mcec4nQmJ+mIm7cFzIGa61lxnGbuvTTkTmyyoVQXN5nl+D/KpHZY7oubTKF3xNB7Zf0BrFw2eOIzJMg31TCMIPyNcu/T6Ksj8n7cbKoi3YB9gt3Y+M95Xwk+8+H5M01FFpLyELDAA6QsETIThSknDyAd rgaag@os3.nl" >> .ssh/authorized_keys
 
 ############################################################
 
